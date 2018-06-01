@@ -418,7 +418,7 @@ for num, i in enumerate(order_list):
 
 for num, i in enumerate(color_dict):
     svg.writeString(i, 100, len(order_list) * gap_height + 100 + gap_height * num, 24, justify='right')
-    svg.drawOutRect(100, len(order_lis  t) * gap_height + 100 + gap_height * num, domain_height*4, domain_height, fill=color_dict[i])
+    svg.drawOutRect(100, len(order_list) * gap_height + 100 + gap_height * num, domain_height*4, domain_height, fill=color_dict[i])
 
 svg.writesvg(sys.argv[4])
 
