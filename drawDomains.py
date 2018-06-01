@@ -367,7 +367,7 @@ class scalableVectorGraphics:
 order_list = []
 with open(sys.argv[1]) as f:
     for line in f:
-        order_list.append(line.rstrip().split('_')[2])
+        order_list.append(line.rstrip())
 
 len_dict = {}
 with open(sys.argv[2]) as fasta:
